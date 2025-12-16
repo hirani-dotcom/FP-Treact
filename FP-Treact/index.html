@@ -3,59 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M2 Final Project</title>
-    <link rel="stylesheet" href="styles.css" class="stylesheet">
-    </head>
+    <title>Mod2 Final</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/dad788b704.js" crossorigin="anonymous"></script>
+</head>
 <body>
-    <header>
-        <section id="landing">
-            <div class="navbar">
-                <nav>
-                <div class="nav__row">
-                    <figure class="nav__logo">
-                        <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="" class="logo">
-                        <h1>Treact</h1>
+    <section>
+        <nav>
+            <div class="nav__container">
+            <figure class="logo__wrapper"
+            ><img class="logo" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="">
+            <h1 class="name">TREACT</h1>
+            </figure>
+            <ul class="nav__links">
+                <li><a class="nav__link" href="#">About</a></li>
+                <li><a class="nav__link" href="#">Blog</a></li>
+                <li><a class="nav__link" href="#">Pricing</a></li>
+                <li><a class="nav__link" href="#">Contact Us</a></li>
+                <li><a class="nav__link" href="#">Login</a></li>
+                <li><a href="#" class="nav__link nav__link--primary" >Sign Up</a></li>
+            </ul>
+            </div>
+        </nav>
+            <header class="header__container">
+                <div class="intro__block">
+                    <h1 class="intro__block--title">Beautiful React Templates <span class="purpletext">For You.</span></h1>
+                    <p class="intro__block--para">Our templates are easy to setup, understand and customize.  Fully modular components with a variety of pages and components</p>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Your E-mail Address" />
+                        <button type="button">Get Started</button>
+                    </div>
+                    <div class="intro__customers">
+                        <p>OUR TRUSTED CUSTOMERS</p>
+                        <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="" class="customer__banner">
+                    </div>
+                </div>
+                <div class="intro__img--wrapper">
+                    <img src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="" class="intro__img">
+                </div>
+            </header>
+
+            <section id="featured">
+                <div class="features">
+                    <h4 class="purpletext">FEATURES</h4>
+                    <h1 class="feat__title">We Have Amazing <span class="purpletext">Service.</span></h1>
+                    <div class="feat__leadpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatum repellendus, cupiditate molestiae laborum quasi aliquam facere nesciunt, sint dolorem dolorum iste animi commodi illum! Natus ducimus similique numquam facilis!</div>
+                </div>
+
+                <div class="feat__container">
+                <div class="feat__row">
+                    <div class="feat__wrap">
+                    <figure>
+                        <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="" class="feat__icon">
                     </figure>
-                    <ul class="nav__links">
-                        <li class="nav__link"><a href="#">About</a></li>
-                        <li class="nav__link"><a href="#">Blog</a></li>
-                        <li class="nav__link"><a href="#">Pricing</a></li>
-                        <li class="nav__link"><a href="#">Contact Us</a></li>
-                        <li class="nav__link"><a href="#">Login</a></li>
-                        <li class="nav__link"><button class="nav__link--primary"><a href="#">Sign Up</a></button></li>
-                    </ul>
-                </div>
-                </nav>
-            </div>
-        
-            <div class="container">
-                <div class="row">
-                    <div class="intro__block">
-                        <h1 class="intro__title">Beautiful React Templates <span class="purpletext">For You</span></h1>
-                        <p class="intro__para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-                        <div class="input__container">
-                            <input type="text" id="textInput" placeholder="Your E-mail Address" class="intro__input">
-                            <button class="btn">Get Started</button>
-                        </div>
-                        <figure class="intro__custs--wrapper">       
-                            <p class="custs__para">OUR TRUSTED CUSTOMERS</p>
-                            <img class="intro__custs--img" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="">
-                        </figure>
+                    <div class="feat__wrapper">
+                        <h2>Secure</h2>
+                        <p class="feat__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur dolorum ducimus <p>
                     </div>
-                    <div class="intro__img--wrapper">
-                        <img class="intro__img" src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="">
                     </div>
+                    <div class="feat__wrap">
+                    <figure>
+                        <img src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="" class="feat__icon">
+                    </figure>
+                    <div class="feat__wrapper">
+                        <h2>24/7 Suport</h2>
+                        <p class="feat__para">exercitationem delectus incidunt vitae labore, enim officiis suscipit consectetur ex facere ullam voluptate nisi? Corrupti, veritatis. Beatae, atque!<p>
+                    </div>
+                    </div>
+                    <div class="feat__wrap">
+                    <figure>
+                        <img src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="" class="feat__icon">
+                    </figure>
+                    <div class="feat__wrapper">
+                        <h2>Customizable</h2>
+                        <p class="feat__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur dolorum ducimus <p>
+                    </div>
+                    </div>
+                    <div class="feat__wrap">
+                    <figure>
+                        <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="" class="feat__icon">
+                    </figure>
+                    <div class="feat__wrapper">
+                        <h2>Reliable</h2>
+                        <p class="feat__para">exercitationem delectus incidunt vitae labore, enim officiis suscipit consectetur ex facere ullam voluptate nisi? Corrupti, veritatis. Beatae, atque!<p>
+                    </div>
+                    </div>
+                    <div class="feat__wrap">
+                    <figure>
+                        <img src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="" class="feat__icon">
+                    </figure>
+                    <div class="feat__wrapper">
+                        <h2>Fast</h2>
+                        <p class="feat__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur dolorum ducimus <p>
+                    </div>
+                    </div>
+                    <div class="feat__wrap">
+                    <figure>
+                        <img src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="" class="feat__icon">
+                    </figure>
+                    <div class="feat__wrapper">
+                        <h2>Easy</h2>
+                        <p class="feat__para">exercitationem delectus incidunt vitae labore, enim officiis suscipit consectetur ex facere ullam voluptate nisi? Corrupti, veritatis. Beatae, atque!<p>
+                    </div>
+                    </div>
+                    
                 </div>
-            </div>
-
-        </section>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-    
+                </div>
+                </div>
+            </section>
+    </section>
 </body>
 </html>
