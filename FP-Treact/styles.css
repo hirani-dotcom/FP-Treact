@@ -9,7 +9,10 @@
 
 html {scroll-behavior: smooth;}
 
+img {width: 100%;}
+
 .purpletext {color: purple;}
+
 
 /* Nav Bar */
 
@@ -70,7 +73,7 @@ header {
 
 .header__container {
     width: 100%;
-    padding: 32px 16px;
+    padding: 96px 0px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -141,7 +144,6 @@ header {
 
 #featured {
     width: 100%;
-    padding: 0 auto;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -149,7 +151,7 @@ header {
 }
 
 .feat__container {
-    padding: 80px 0;
+    padding: 96px 0;
 }
 
 .feat__row {
@@ -170,13 +172,16 @@ header {
 }
 
 .feat__leadpara {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     text-align: center;
     line-height: 1.625;
 }
 .feat__container {
     width: 100vw;
-    padding: 80px 0;
+    padding: 80px 0px;
 }
 
 .feat__row {
@@ -211,3 +216,141 @@ header {
 }
 
 h5 {padding-bottom: 24px;}
+
+/* Design & Develop */
+
+#designdevelop {
+    padding: 0 24px;
+}
+
+.container {
+    padding: 96px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desdev__wrapper {
+    width: 50%;
+    line-height: 1.6;
+}
+
+.desdev__para {
+    padding-top: 24px;
+    line-height: 1.5;
+
+}
+.btn {
+    margin-top: 32px;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    padding: 8px 24px;
+    border: none;
+}
+
+.desdev__img--wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    position: relative;
+}
+
+.intro__img {
+    margin: 0 0;
+    z-index: 1;
+}
+
+/* Grid container */
+  .dot__grid {
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    position: absolute;
+    right: 5px; bottom: 5px;
+    width: 80px; height: 80px;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(10, 5px); /* 10 columns, each 5px wide */
+    grid-template-rows: repeat(10, 5px);    /* 10 rows, each 5px tall */
+    gap: 5px; /* space between dots */
+  }
+
+  /* Dot style */
+  .dot {
+    width: 4px;
+    height: 4px;
+    background-color: purple;
+    border-radius: 50%; /* makes it a circle */
+  }
+
+  /* Steps Section */
+
+  .container {
+    padding: 96px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .steps__img--wrapper {
+    width: 50%;
+    display: flex;
+  }
+
+  .steps__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 32px;
+  }
+
+  .step__number {
+    font-size: 32px;
+    color: lightgrey;
+    line-height: 1;
+    display: block;
+  }
+
+  .step__description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+    max-width: 350px;
+  }
+
+  .step__title {
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+    margin-left: 0;
+  }
+
+  .step__para {
+    margin-top: 12px;
+    font-size: 14px;
+    color: rgb(70, 69, 69);
+  }
+
+  /* Values Section */
