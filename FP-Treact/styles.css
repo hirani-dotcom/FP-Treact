@@ -13,6 +13,11 @@ img {width: 100%;}
 
 .purpletext {color: purple;}
 
+button:hover {
+    text-decoration: underline;
+    transform: rotateY(-2px);
+    cursor: pointer;
+}
 
 /* Nav Bar */
 
@@ -229,7 +234,7 @@ h5 {padding-bottom: 24px;}
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -297,7 +302,7 @@ h5 {padding-bottom: 24px;}
   .container {
     padding: 96px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -319,6 +324,10 @@ h5 {padding-bottom: 24px;}
     align-items: center;
   }
 
+  .section__title {
+    display: flex;
+    text-align: left;
+  }
   .step {
     display: flex;
     flex-direction: row;
@@ -365,7 +374,7 @@ h5 {padding-bottom: 24px;}
 
   .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1200px;
@@ -384,12 +393,14 @@ h5 {padding-bottom: 24px;}
   }
 
   .section__title {
+    display: flex;
+    text-align: left;
     margin: 32px 0;
     font-size: 36px;    
   }
 
   .section__para {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.8;
     color: rgb(65, 63, 63);
   }
@@ -440,4 +451,217 @@ h5 {padding-bottom: 24px;}
 
 .values__img {
     width: 50%;
+}
+
+/* Pricing Section */
+
+#pricing {
+    padding: 0 32px;
+}
+
+.row__container {
+    padding: 96px 0;
+    display: flex;justify-content: center;align-items: center;
+}
+
+.row__pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 0;
+}
+
+.section__title, .section__para {
+    text-align: center;
+    width: 580px;
+}
+
+.plans {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan {
+    margin-top: 32px;
+    margin-right: 32px;
+    width: calc(100%/3);
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+}
+
+.plan:nth-child(2) {    
+    margin-top: 32px;
+    margin-right: 32px;
+    width: calc(100%/3);
+    background-color: purple;}
+
+.plan:nth-child(2) .plan__feature, .plan:nth-child(2) .plan__target, .plan:nth-child(2) .plan__top {
+    color: white;
+}
+
+.plan__top {
+    padding: 24px 0;
+    margin: 0 0;
+    width: 100%;
+}
+
+.plan__name, .plan__price, .plan__term {
+    font-weight: bold;
+    line-height: 2;
+}
+
+.plan__name {
+    font-size: 24px;
+}
+
+.plan__price {
+    font-size: 48px;
+}
+
+.plan__term {
+    font-size: 18px;
+}
+
+.plan__middle {
+    padding: 8px;    
+    border-bottom: 1px solid rgb(158, 156, 156);
+    border-top: 1px solid rgb(158, 156, 156);
+}
+
+.plan__target {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.plan__feature {
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(94, 93, 93);
+}
+
+.plan__bottom {
+    padding: 32px 0;
+}
+
+.plan__button {
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: purple
+}
+
+.plan:nth-child(1) .plan__button {
+    background: linear-gradient(90deg, green, lightgreen);
+    color: white;
+}
+
+.plan:nth-child(3) .plan__button {
+    background: linear-gradient(90deg, orange, yellow);
+    color: blue;
+}
+
+/* Testimonial Section */
+
+.testimonial__img {
+    width: 50%;
+    padding: 0 16px;
+}
+
+.testimonial__section {
+    padding-left: 48px;
+    width: 100%;
+    max-width: 576px;
+}
+
+.testimonial__section .section__tag, .testimonial__section .section__title, .testimonial__section .section__para {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.testimonial {
+    margin-top: 48px;
+}
+
+.testimonial__rating {
+    margin-bottom: 24px;
+    display: flex;
+    text-align: left;
+    color: gold;
+}
+
+.testimonial__title {
+    padding-bottom: 24px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.testimonial__para {
+    line-height: 1.625;
+    font-size: 18px;
+}
+
+.testimonial__bottom {
+    padding-top: 28px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial__profile {
+    display: flex;flex-direction: row;
+    align-items: center;
+}
+.testimonial__writer {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.testimonial__profimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.testimonial__name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.testimonial__role {
+    font-size: 18px;
+}
+
+.testimonial__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 50px;    
+    background-color: white;
+}
+
+.divider {
+    margin: 0 8px;
+    color: white;
+}
+
+.testimonial__button {
+    padding: 16px;
+    background-color: rgb(204, 200, 201);
+    border: none;
+    border-radius: 50px;
 }
